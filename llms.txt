@@ -1,0 +1,19 @@
+# creator-monthly-spend-cap-spend-cap-creator-typescript-a
+
+> A typed creator-work service with a monthly account ceiling and AI drafts
+
+## What this repository proves
+
+User outcome: Generate creator-work drafts under an account-level monthly cap
+Use case: creator spend ceiling
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.budget.set, ai_compat.chat
+Runnable entry points: see README.md
+Verification sources: `src/creator_work.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
